@@ -1,0 +1,29 @@
+<footer>
+    <h2>All &copy; rights reserved powered By <a routerLink="/">3d Dress Visualization</a></h2>
+    <div class="social">
+        <h2>You Can Follow us on &darr;</h2>
+
+        <div class="facebook">
+            <label for="facebook">facebook</label>
+            <a href="#"><fa-icon [icon]="Insta"></fa-icon></a>
+        </div>
+
+        <div class="facebook">
+            <label for="Instagram">Instagram</label>
+            <a href="#"><fa-icon [icon]="Face"></fa-icon></a>
+        </div>
+
+        <div class="facebook">
+            <label for="twitter">Twitter</label>
+            <a href="#"><fa-icon [icon]="Twitter"></fa-icon></a>
+        </div>
+
+        <button style="    position: absolute;
+        right: 12px;
+        width: 67px;
+        height: 34px;
+        background: palevioletred;
+        box-shadow: 0px 0px 3px 4px #db7093; cursor: pointer; color: #fff;" *ngIf="services.isLogeedIn()" (click)="Logout()">Logout</button>
+    </div>
+
+</footer>

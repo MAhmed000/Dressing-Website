@@ -1,0 +1,15 @@
+<div class="contact">
+    <h1 style="text-align: center; margin-bottom:12px;">Category</h1>
+    <form [formGroup]="categoryForm" (ngSubmit)="getFormVal()">
+
+        <input type="hidden" formControlName="cat_id">
+
+        <label for="title">Category Name</label>
+        <input type="text" formControlName="cat_Name" placeholder="Enter Category Name">
+
+        <input type="hidden" formControlName="total_posts" placeholder="Enter Total Posts">
+
+
+        <button type="submit" class="submit">Submit</button>
+    </form>
+</div>

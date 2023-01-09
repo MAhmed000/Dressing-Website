@@ -1,0 +1,22 @@
+<div class="contact">
+    <h1 style="text-align: center; margin-bottom:12px;">Contact us</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="contactSubmit()">
+        <label for="name">Your Name</label>
+        <input type="text" [minLength]="8" [maxLength]="20" formControlName="name" placeholder="Enter Name">
+        <span *ngIf="name && name.invalid && name.touched" style="color: rgba(220, 20, 60, 0.623); display:block; text-align:center; font-size: 19px;">Fill field First and length should be 3 to 20 char</span>
+
+        <label for="email">Your Email</label>
+        <input type="email" formControlName="email" placeholder="Enter Email">
+        <span *ngIf="email && email.invalid && email.touched" style="color: rgba(220, 20, 60, 0.623); display:block; text-align:center; font-size: 19px;">Enter Valid Email</span>
+
+        <label for="contact">Your Phone No</label>
+        <input type="tel" formControlName="contact" [minlength]="5" [maxlength]="11" placeholder="Enter Phone No">
+        <span *ngIf="contact && contact.invalid && contact.touched" style="color: rgba(220, 20, 60, 0.623); display:block; text-align:center; font-size: 19px;">Contact length must be 11 numbers</span>
+
+        <label for="purpose">Purpose of Contact</label>
+        <textarea formControlName="purpose" placeholder="Enter Contact" cols="30" rows="10"></textarea>
+
+
+        <button type="submit" [disabled]="contactForm.invalid" class="submit">Submit</button>
+    </form>
+</div>

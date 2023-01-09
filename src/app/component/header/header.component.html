@@ -1,0 +1,39 @@
+<div class="main">
+    <div class="name">
+        <div class="logo">
+            <img src="..//src//assets/logo/logo1.png" alt="Logo Not Found">
+        </div>
+        <h1>3D Dress Visualization</h1>
+        <h2>A way to make your life easier</h2>
+        <button class="login_btn" routerLink="login"><i class="fas fa-sign-in"></i>&nbsp;&nbsp;Sign In</button>
+        <button class="admin_login_btn" (click)="AdminLogin()"><i class="fas fa-sign-in"></i>&nbsp;&nbsp;Admin Login</button>
+    </div>    
+
+
+    <nav class="navbar">
+        
+        <div class="nav">
+            <ul>
+                <li class="active"><a  routerLink="/home"><fa-icon [icon]="Home"></fa-icon>
+                    Home</a></li>
+                <li><a  routerLink="about"><fa-icon [icon]="About"></fa-icon>About us</a></li>
+                <li><a  routerLink="contact"><fa-icon [icon]="Contact"></fa-icon>Contact us</a></li>
+                <li><a  routerLink="shop-now"><fa-icon [icon]="Shop"></fa-icon>Shop Now</a></li>
+                <li class="ctype">
+                    <a href="#"><fa-icon [icon]="ctype"></fa-icon> Cloth Type</a>
+                    <ul>
+                        <li><a  routerLink="summer/1">Summer</a></li>
+                        <li><a  routerLink="winter/2">Winter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="burger" id="x" (click)="burger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+</div>
+
+

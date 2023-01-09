@@ -1,0 +1,48 @@
+.about{
+    margin-top: 12px;
+    margin-bottom: 23px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 22px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    background-color: rgb(216, 211, 211);
+    border-radius: 12px;
+}
+.about h1,h2{
+    text-align: center;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+.about p{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+@media screen and (max-width:880px){
+    .about{
+        margin-bottom: 23px;
+    }
+}
+
+@media screen and (max-width:632px){
+    .about{
+        margin-bottom: 23px;
+    }
+    .about p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .about{
+        margin-bottom: 23px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .about{
+        margin-bottom: 23px;
+    }
+}

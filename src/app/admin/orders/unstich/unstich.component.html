@@ -1,0 +1,23 @@
+<table id="planets" border="3" cellpadding="4" cellspacing="4">
+	<thead>
+		<tr>
+			<th>Amount</th>
+            <th>Delivery Charges</th>
+            <th>Total Amount</th>
+            <th>Quantity</th>
+            <th>Order Done</th>
+		</tr>
+	</thead>
+		<tbody>
+			<tr *ngFor="let item of getallstichrecord">
+                <td>{{item.Amount}}</td>
+                <td>{{item.Delivery_Charges}}</td>
+                <td>{{item.Total_Amount}}</td>
+                <td>{{item.Qty}}</td>
+                <td>
+					<button class="done" (click)="click(item)" [disabled]="item.Done" #btn>✓</button>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>

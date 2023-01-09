@@ -1,0 +1,21 @@
+<button class="add-btn" routerLink="add-new-category">Add New <fa-icon style="color:red;" [icon]="Add"></fa-icon></button>
+
+<table id="planets" border="3" cellpadding="4" cellspacing="4">
+	<thead>
+		<tr>
+			<th>Category Name</th>
+			<th>Total Posts</th>
+            <th>Delete Category</th>
+            <th>Edit Category</th>
+		</tr>
+	</thead>
+		<tbody>
+			<tr *ngFor="let item of getallcategory">
+                <td>{{item.Category_Name}}</td>
+                <td>{{item.Total_Posts}}</td>
+                <td (click)="deletePost(item.cat_id)"><fa-icon [icon]="Delete"></fa-icon></td>
+                <td><fa-icon routerLink="edit-category/{{item.cat_id}}" [icon]="Edit"></fa-icon></td>
+			</tr>
+
+		</tbody>
+	</table>

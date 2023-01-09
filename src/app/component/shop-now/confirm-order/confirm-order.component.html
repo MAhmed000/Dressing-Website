@@ -1,0 +1,44 @@
+<!-- 
+    <div class="about">
+
+        <div class="selected" *ngFor="let item of getsinglepost">
+            <h3 class="text-center">Your Selected Cloth</h3>
+            <div class="border"></div>
+            <img [src]="services.PhotoUrl+item.post_img" alt="Not found">
+        </div>
+        <div class="dummy" *ngFor="let item of getsinglepost">
+            <img [src]="services.PhotoUrl+item.dummy_img" alt="">
+        </div>
+    </div> -->
+
+
+    <div class="measure">
+            <h3>Type of Cloth</h3>
+            <div id="opt">
+            <br><br><span>Unstiched</span><input type="radio" checked name="unstiched" (click)="UnStichClothes()" id="ust">
+            <span>Stiched</span><input type="radio" (click)="StichClothes()" name="unstiched" id="st">
+            </div>
+            <div id="unstich">
+                <a style="    padding-left: 17px;
+                padding-right: 17px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                text-decoration: none;"  class="btn btn-danger width" (click)="UnStichOrder()" *ngIf="unstichcond">Confirm Order</a>
+            </div>
+            <div id="stich" *ngIf="stichcond">
+                <form name="form" [formGroup]="formValue">
+
+                    <label for="msg">Enter your Cloth Size and Measurement</label>
+                    <textarea id="measurement" placeholder="Enter your measurement" formControlName="measurement" style="border:3px solid #002f57;" rows="10" cols="40" name="measurement"></textarea>
+
+                    <button class="btn btn-primary" (click)="StichOrder()">Confirm Order</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="price">
+            <h3 style="color: #002f57;">Your Total Bill So Far ={{total_Amount}} Rs</h3>
+        </div>
+      
+    <!-- Type of Cloths -->
+

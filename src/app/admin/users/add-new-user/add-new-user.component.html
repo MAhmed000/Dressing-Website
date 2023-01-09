@@ -1,0 +1,19 @@
+<div class="contact">
+    <h1 style="text-align: center; margin-bottom:12px;">Post</h1>
+    <form [formGroup]="userForm" (ngSubmit)="getFormVal()">
+
+        <label for="title">Username</label>
+        <input type="text" formControlName="username" placeholder="Enter Username" >
+        <span style="color: red;" *ngIf="username && username.invalid && username.touched">Username is required...!</span>
+<br>
+        <label for="title">Email</label>
+        <input type="email" formControlName="email" placeholder="Enter email">
+        <span style="color: red;" *ngIf="email && email.invalid && email.touched">Email is required...!</span>
+<br>
+        <label for="title">Password</label>
+        <input type="password" formControlName="password" placeholder="Enter password">
+        <span style="color: red;" *ngIf="password && password.invalid && password.touched">Password is required...!</span>
+<br>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,203 @@
+.name{
+    background-color:#192a56;
+    color: #fff;
+    padding:12px 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    height: 180px;
+}
+
+.name h1,h2{
+    padding: 12px 0;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.logo img{
+    width: 246px;
+    height: 180px;
+    border-top-right-radius: 134px;
+    border-bottom-right-radius: 66px;
+}
+
+.main{
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: #273c75;
+    height: 70px;
+}
+
+.nav{
+    position: absolute;
+    right: 25px;
+}
+
+.nav ul li{
+    list-style: none;
+    float: left;
+    width: 150px;
+    margin: 15px 22px;
+    background-color: #273c75;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    border-bottom: 1px solid #273c75;
+}
+
+.nav ul li ul{
+    display: none;
+}
+
+.nav ul li:hover > ul{
+    display: block;
+}
+
+.nav ul li ul li{
+    background-color: #273c75;
+    padding: 0;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.nav ul li ul li:last-child{
+    margin-top: -12px;
+    border-bottom: none;
+}
+
+.nav ul li a{
+    padding: 4px 14px;
+    border: 1px solid #273c75;
+}
+
+.nav ul li a:hover{
+    border: 1px solid #fff;
+    padding: 4px 14px;
+    background-color: #192a56;
+    box-shadow: 1px 2px 2px 2px #000;
+}
+
+@media screen and (max-width:795px){
+    .logo{
+        position: static;
+    }  
+    .name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 380px;
+    }
+}
+.burger{
+    position: absolute;
+    right: 21px;
+    cursor: pointer;
+    display: none;
+    background-color: #273c75;
+}
+
+.line{
+    width: 48px;
+    height: 8px;
+    background: #030303;
+    margin: 5px;
+}
+
+
+@media screen and (max-width:996px) {
+    .nav ul li{
+        margin: 15px 3px;
+    }        
+}
+
+
+@media screen and (max-width:812px) {
+    .nav ul li{
+        margin: 15px 0px;
+    }        
+}
+
+@media screen and (max-width:780px) {
+    .nav ul{
+        display: none;
+    }
+    .burger{display: block;}
+}
+
+
+.fa, .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 12;
+}
+
+.login_btn{
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    width: 106px;
+    height: 46px;
+    background: #0b0a40;
+    border: 1px solid rgb(136, 81, 81);
+    border-top-left-radius: 13px;
+    color: #fff;
+    border-bottom-left-radius: 28px;
+    transition: 2s;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+.login_btn:hover{
+    width: 130px;
+    height: 50px;
+    background: #8381e6;
+}
+
+.admin_login_btn{
+    position: absolute;
+    right: 0px;
+    top: 128px;
+    width: 106px;
+    height: 46px;
+    background: #0b0a40;
+    border: 1px solid rgb(136, 81, 81);
+    border-top-left-radius: 26px;
+    color: #fff;
+    border-bottom-left-radius: 13px;
+    transition: 2s;
+    cursor: pointer;
+    font-size: 17px
+}
+.admin_login_btn:hover{
+    width: 130px;
+    height: 50px;
+    background: #8381e6;
+}
+@media screen and (max-width:462px) {
+    .login_btn{
+        top:10px;
+    }
+}
+
+
+@media screen and (max-width:462px) {
+    .login_btn{
+        top:2px;
+    }
+}
+
+.x{
+    cursor: pointer;
+}

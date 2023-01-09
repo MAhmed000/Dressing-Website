@@ -1,0 +1,38 @@
+<div class="main">
+    <div class="name">
+        <div class="logo">
+            <img src="..//src//assets/logo/logo1.png" alt="Logo Not Found">
+        </div>
+        <h1>3D Dress Visualization</h1>
+        <h2>A way to make your life easier</h2>
+        <button class="login_btn" *ngIf="service.isLogeedInAdmin()" (click)="Logout()">Logout</button>
+    </div>    
+
+
+    <nav class="navbar">
+        
+        <div class="nav">
+            <ul>
+                <li class="active"><a  routerLink="post"><fa-icon [icon]="Blog"></fa-icon>&nbsp;Post</a></li>
+                <li><a  routerLink="category"><fa-icon [icon]="List"></fa-icon>&nbsp;Category</a></li>
+                <li><a  routerLink="users"><fa-icon [icon]="User"></fa-icon>&nbsp;User</a></li>
+                <li><a  routerLink="contact-messsages"><fa-icon [icon]="Contact"></fa-icon>&nbsp;Contacts</a></li>
+                <li><a><fa-icon [icon]="Order"></fa-icon>Orders</a>
+                   
+                    <ul>
+                        <li><a  routerLink="orders/stich">Stich</a></li>
+                        <li><a  routerLink="orders/un-stich">Un Stich</a></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="burger" id="x" (click)="burger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+</div>
+
+

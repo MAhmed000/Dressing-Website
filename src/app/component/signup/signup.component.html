@@ -1,0 +1,22 @@
+<div class="login">
+    <h1 style="text-align: center; margin-bottom:12px;">Sign up</h1>
+    <form [formGroup]="signupform" (ngSubmit)="SignUp()"  style="position: relative;">
+        <label for="name">Username</label>
+        <input type="text" formControlName="username" placeholder="Enter username">
+        <span *ngIf="username && username.invalid && username.touched" style="color: rgba(220, 20, 60, 0.623); display:block; text-align:center; font-size: 19px;">Enter valid email</span>
+
+
+        <label for="name">email</label>
+        <input type="email" formControlName="email" placeholder="Enter Email">
+        <span *ngIf="email && email.invalid && email.touched" style="color: rgba(220, 20, 60, 0.623); display:block; text-align:center; font-size: 19px;">Enter valid email</span>
+
+        <label for="contact">Password</label>
+        <input type="password" formControlName="password" placeholder="Enter Password">
+        <span *ngIf="password && password.invalid && password.touched" style="color: rgba(220, 20, 60, 0.623); display:block; text-align:center; font-size: 19px;">Password Required</span>
+
+
+        <button type="submit" [disabled]="signupform.invalid" class="submit">sign up</button>
+
+        <button class="submit s1" style="background-color: #b54e4e;" routerLink="/login">Sign in</button>
+    </form>
+</div>

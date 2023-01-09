@@ -1,0 +1,49 @@
+/* For Footer*/
+footer
+{
+    line-height: 80px;
+    text-align: center;
+    background-color: #002f57;
+    color: #fff;
+    padding-top: 32px;
+    padding-bottom: 12px;
+}
+footer a{
+    color: cornsilk;
+}
+
+/*Social Icons*/
+
+.social{
+    margin-left: -8%;
+}
+
+.social h{
+    margin-left: 9%;
+}
+
+.facebook{
+    display: inline-block;
+    width: min-content;
+    padding-left: 7%;
+}
+.facebook .fab{
+    transition: 3s;
+    font-size: 35px;
+}
+
+.facebook .fac:nth-child(1):hover{
+    color: #6781b9;
+}
+
+.facebook .inst:nth-child(1):hover {
+    color: #eb838c;
+}
+
+.facebook .twit:nth-child(1):hover {
+    color: #4c7de6;
+}
+
+.ng-fa-icon{
+    font-size: 54px;
+}

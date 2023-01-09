@@ -1,0 +1,19 @@
+<button class="add-btn" routerLink="add-new-user">Add New <fa-icon style="color:red;" [icon]="Add"></fa-icon></button>
+
+<table id="planets" border="3" cellpadding="4" cellspacing="4">
+	<thead>
+		<tr>
+			<th>Username</th>
+			<th>Email</th>
+            <th>Delete Record</th>
+		</tr>
+	</thead>
+		<tbody>
+			<tr *ngFor="let item of getalladmins">
+                <td>{{item.username}}</td>
+                <td>{{item.Email}}</td>
+                <td (click)="deleteUser(item.id)"><fa-icon [icon]="Delete"></fa-icon></td>
+			</tr>
+
+		</tbody>
+	</table>

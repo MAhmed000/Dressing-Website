@@ -1,0 +1,46 @@
+
+<div class="parent-container">
+    <div class="container">
+
+        <div class="shop-now" *ngFor="let item of getallpost">
+            <h2>{{item.post_title}}</h2>
+            <img [src]="service.PhotoUrl+item.post_img" alt="Post image">
+            <h3>Price = {{item.price}}</h3>
+            <h5>Category = {{item.category==1?"Winter":"Summer"}}</h5>
+            <h5>Total Quantity = {{item.quantity}}</h5>
+            Qty : 
+            <select [(ngModel)]="Quantity" #qty>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <div style="border-bottom:2px solid gray;"></div>
+            <button (click)="AddToCart(item)">Add To Cart</button>
+            <!-- <button routerLink="/confirm-order/{{item.post_id}}">Add To Cart</button> -->
+        </div>
+    </div>
+
+
+
+    <div class="add-to-cart">
+        <h1 style="text-align: center; margin:22px 0;">Your Cart</h1>
+        <h1 style="color:red ;"><strong>Username : {{service.getToken()!=null?service.getToken():'--------'}}</strong></h1>
+   <div *ngFor="let i of allrec">
+        <p><strong>Product : {{i.post_title}}</strong></p>
+        <p><strong>Price : {{i.price}}</strong></p>
+        <p><strong>Category : {{i.category==1?"Winter":"Summer"}}</strong></p>
+        <p><strong>Quantity : {{i.Qty}}</strong></p>
+        <div style="border-bottom:2px solid gray;"></div>
+    </div>        
+    <button (click)="confirmOrder()" [disabled]="allrec==''">Confirm Order</button>
+
+    </div>
+</div>

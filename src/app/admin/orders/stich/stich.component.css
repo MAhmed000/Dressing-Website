@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:300,700);
+
+/*table style*/
+table#planets{
+    margin: 20px 0 0 0;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #000 url(https://static.pexels.com/photos/19068/mirror-light-black-glass.jpg) no-repeat bottom center;
+    color: #fff;
+    width: 90%;
+    margin-left: 5%;
+}
+table#planets th,table#planets td{
+    text-align: center;
+}
+table#planets thead{
+    font-size: .8em;
+    line-height: 12px;
+    background: #192a56;
+    text-transform: uppercase;
+}
+table#planets thead th{
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    vertical-align:bottom;
+}
+table#planets thead th:nth-child(1){
+    width: 20%;
+    text-align: left;
+    padding-left: 20px;
+
+}
+table#planets thead th:nth-child(2){
+    width: 30%;
+
+}
+table#planets thead th:nth-child(3){
+    width: 35%;
+
+}
+table#planets thead th:nth-child(4){
+    width: 15%;
+
+}
+table#planets tbody{
+    font-size: .9em;
+    line-height: 15px;
+}
+table#planets tbody tr{
+    border-top: 1px solid rgba(248,220,174,.8);
+    transition:.6s, color .6s;
+}
+table#planets tbody tr:nth-child(even){
+    background: rgba(255,255,255,.2);
+
+}
+table#planets tbody tr:hover{
+    background: rgba(255,255,255,.5);
+}
+table#planets td{
+    padding: 12px;
+}
+table#planets tbody tr:hover td:first-child{
+    background: #192a56;
+    color: #fff;
+}
+table#planets tbody td:first-child{
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 700;
+    background: rgb(228 229 233);
+    transition: .6s;
+    color: rgb(14, 9, 9);
+}
+table#planets tfoot{
+    font-size: .8em;
+}
+table#planets tfoot{
+    border-top: 2px solid #e79300;
+}
+table#planets tfoot td{
+    color: rgba(255,255,215,.6);
+    text-align: left;
+    line-height: 15px;
+    padding: 15px 20px;
+}
+table#planets tfoot a:hover{
+    color: #fff;
+    text-decoration: underline;
+
+}
+
+@media screen and(max-width: 400px){
+    table#planets{
+        font-size: .9em;
+    }
+}
+
+.fad{
+    color: #ccf7cc;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.done{
+    width: 40px;
+    height: 37px;
+    border-radius: 19px;
+    background: #0db70d;
+    color: #fff;
+    font-size: 24px;
+    cursor:pointer;
+}

@@ -1,0 +1,127 @@
+.selected{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    padding: 22px;
+}
+
+.dummy {
+    width: 323px;
+    height: 299px;
+    z-index: -1;
+    margin-top: 23px;
+    margin-left: 74px;
+}
+
+.border{
+    width: 100%;
+    border-bottom: 3px solid #002f57;
+    margin: 0;
+}
+
+@keyframes dumy {
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.dummy img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 14px 20px 33px #000;
+    object-fit: fill;
+    border-radius: 50px;
+    animation: dumy 4s infinite;
+}
+.selected h3{
+    line-height: 37px;
+    margin-bottom: 8px;
+}
+.selected img{
+    width: 253px;
+    height: 231px;
+    margin-top: 12px;
+    border-radius: 27px;
+    box-shadow: 17px 19px 34px #000;
+}
+.measure{
+    margin-top: 42px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.measure h3{
+    margin-left: 8%;
+}
+.measure span{
+    font-size: 22px;
+    padding-left: 15px;
+}
+.measure input{
+    margin-left: 12px;
+}
+.width{
+    margin-left: 47px;
+    width: 143px;
+    margin-top: 32px;
+}
+
+
+
+#stich form label{
+    display: block;
+    margin: auto;
+    margin-top: 17px;
+    margin-bottom: 8px;
+}
+#stich form textarea {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    padding: 23px;
+    border: 3px solid rebeccapurple;
+    border-radius: 28px;
+    background: transparent;
+}
+.measure{
+    text-align: center;
+}
+
+#extra{
+    margin-top: 3%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#opt{
+    margin-left: 96px;
+    margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 462px) {
+    #opt{
+        margin-left: 11px;
+    }
+}
+.price{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding:23px;
+    border: 3px solid #002f57;
+    display: inline-block;
+}
+.price h3{
+    color: #cd5151;
+}
+
+.btn{
+    width: 114px;
+    height: 37px;
+    background: #273c75;
+    color: #fff;
+    cursor: pointer;
+    border: 3px solid;
+    border-radius: 12px;
+}

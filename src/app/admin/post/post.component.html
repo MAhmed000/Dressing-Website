@@ -1,0 +1,26 @@
+
+<button class="add-btn" routerLink="add-post">Add New <fa-icon style="color:red;" [icon]="Add"></fa-icon></button>
+
+<table id="planets" border="3" cellpadding="4" cellspacing="4">
+	<thead>
+		<tr>
+			<th>Cloth Name</th>
+			<th>Cloth Price</th>
+			<th>Cloth Category</th>
+			<th>Total Quantity</th>
+            <th>Delete Record</th>
+            <th>Edit Record</th>
+		</tr>
+	</thead>
+		<tbody>
+			<tr *ngFor="let item of getallposts">
+                <td>{{item.post_title}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.category}}</td>
+				<td>{{item.quantity}}</td>
+                <td (click)="deletePost(item.post_id)"><fa-icon [icon]="Trash"></fa-icon></td>
+                <td><fa-icon [icon]="Edit" routerLink="edit-post/{{item.post_id}}" (click)="update(item)"></fa-icon></td>
+			</tr>
+
+		</tbody>
+	</table>

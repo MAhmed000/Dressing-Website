@@ -1,0 +1,21 @@
+<table id="planets" border="3" cellpadding="4" cellspacing="4">
+	<thead>
+		<tr>
+			<th>Name of person</th>
+			<th>Email</th>
+			<th>Phone No</th>
+            <th>Message</th>
+            <th>Delete Record</th>
+		</tr>
+	</thead>
+		<tbody>
+			<tr *ngFor="let item of allcontact">
+                <td>{{item.Name}}</td>
+                <td>{{item.Email}}</td>
+                <td>{{item.phone_no}}</td>
+                <td>{{item.Message}}</td>
+                <td (click)="deleteContact(item.id)"><fa-icon [icon]="Delete"></fa-icon></td>
+			</tr>
+
+		</tbody>
+	</table>

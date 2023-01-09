@@ -1,0 +1,90 @@
+.login{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 22px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+    margin: 12px 0;
+    margin-left: 10%;
+    background-color: rgb(216, 211, 211);
+    border-radius: 12px;
+}
+
+.login input,textarea{
+    display: block;
+    width: 471px;
+    font-size: 17px;
+    background: transparent;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 11px;
+    box-shadow: 7px 6px 5px -2px #000;
+}
+
+.login label{
+    margin: 4px 4px;
+}
+
+.submit{
+    display: block;
+    margin: auto;
+    width: 104px;
+    height: 44px;
+    font-size: 14px;
+    color: rgb(204, 197, 197);
+    background-color: #002f57;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.submit:hover{
+    color: #fff;
+    background-color: #021f38;
+}
+
+.s1{
+    background-color: #b54e4e;
+    margin-left: 155%;
+}
+
+@media screen and (max-width:1504px){
+    .s1{
+        margin-left: 135%;
+    }    
+}
+
+@media screen and (max-width:1276px){
+    .s1{
+        margin-left: 115%;
+    }    
+}
+@media screen and (max-width:1033px){
+    .s1{
+        margin-left: 90%;
+    }    
+}
+
+@media screen and (max-width:735px){
+    .s1{
+        margin-left: 70%;
+    }    
+}
+
+@media screen and (max-width:367px){
+    .s1{
+        margin-left: 50%;
+    }    
+}
+
+@media screen and (max-width:636px){
+    .login input{
+        width: 350px;
+    }
+    .login{width: 90%;margin-left: 5%;}
+}
+@media screen and (max-width:400px){
+    .login input{
+        width: 300px;
+    }
+}

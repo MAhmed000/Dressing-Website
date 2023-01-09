@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.add-btn{
+    position: relative;
+    left: 93%;
+    width: 101px;
+    height: 46px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: #fdfdfd;
+    background: #045206c7;
+    top: 10px;
+    cursor: pointer;
+}
